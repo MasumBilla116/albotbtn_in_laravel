@@ -1,0 +1,341 @@
+/*
+    This style sheet for Tdesk website.
+    Authoor: Md. Masum billa
+*/
+@import "mixin"; // import the mixin
+@import "var"; // import the variable
+body {
+    background-color: $page-wraper-bg;
+    scroll-behavior: smooth;
+}
+.page-wrapper {
+    background: $page-wraper-bg;
+}
+.section-bg {
+    background-color: $sec-bg;
+}
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #007870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form {
+        width: max-content;
+        padding: 1rem;
+        background-color: #00422f;
+        border-radius: 0.3rem;
+        border: 1px solid #fff;
+    }
+}
+.text-aliceblue {
+    color: aliceblue;
+}
+.fs-1 {
+    @include fontSize(1rem);
+}
+.fs-2 {
+    @include fontSize(1.5rem);
+}
+.fs-3 {
+    @include fontSize(2rem);
+}
+.fs-4 {
+    @include fontSize(2.5rem);
+}
+.fs-5 {
+    @include fontSize(3rem);
+}
+.fs-6 {
+    @include fontSize(3.5rem);
+}
+.-ms-1 {
+    margin-left: -0.5rem;
+}
+.-ms-2 {
+    margin-left: -1rem;
+}
+.-ms-3 {
+    margin-left: -1.5rem;
+}
+.-ms-4 {
+    margin-left: -2rem;
+}
+.-ms-5 {
+    margin-left: -2.5rem;
+}
+.-ms-6 {
+    margin-left: -3rem;
+}
+.rounded-lt {
+    border-start-start-radius: 0.25rem;
+}
+.rounded-lb {
+    border-end-start-radius: 0.25rem;
+}
+.rounded-rt {
+    border-start-end-radius: 0.25rem;
+}
+.rounded-rb {
+    border-end-end-radius: 0.25rem;
+}
+.rounded-rb {
+    border-radius: 0 0 0 0.25rem;
+}
+.rounded-lt-0 {
+    border-start-start-radius: 0;
+}
+.rounded-lb-0 {
+    border-end-start-radius: 0;
+}
+.rounded-rt-0 {
+    border-start-end-radius: 0;
+}
+.rounded-rb-0 {
+    border-end-end-radius: 0;
+}
+.sidebar-link-expand {
+    background-color: $sidebar-link-bg;
+    border-bottom: 2px solid #000;
+}
+.card {
+    background-color: $card-body;
+}
+.form-control {
+    @include formControlBg(#024241, #037872);
+    color: #f0f8ff85 !important;
+    &::placeholder {
+        color: #f0f8ff85 !important;
+    }
+    &:focus {
+        @include formControlFocus(#045652, #038f88);
+        color: aliceblue !important;
+    }
+    &.focus-box-shadow-none {
+        box-shadow: none;
+    }
+    &.focus-box-shadow {
+        box-shadow: 0px 5px 5px #000000d1;
+    }
+}
+hr {
+    background-color: black;
+}
+video {
+    border: 1px solid #00524e;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #000;
+    text-align: center;
+    background: transparent;
+}
+#poster-view {
+    height: 200px;
+}
+.fa-eraser {
+    cursor: pointer;
+    position: relative;
+    .eraser-tooltip {
+        @include tooltip();
+    }
+    &:hover .eraser-tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.text-shadow {
+    text-shadow: 4px 3px 2px #000;
+}
+.fw-100 {
+    font-weight: 100 !important;
+}
+.box-shadow {
+    box-shadow: 0px 5px 5px #000000d1;
+}
+.box-shadow-none {
+    box-shadow: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.left-sidebar {
+    position: fixed;
+    height: 100vh;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.z-10 {
+    z-index: 1;
+}
+.z-20 {
+    z-index: 20;
+}
+.z-50 {
+    z-index: 50;
+}
+.auto-counter {
+    counter-reset: auto-increment;
+}
+.counter::before {
+    counter-increment: auto-increment;
+    content: counter(auto-increment) ".";
+}
+.w-max-content {
+    width: max-content;
+}
+.table tr th {
+    background-color: $table-th-bg !important;
+    border-color: black !important;
+}
+
+.form-check-input {
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+.mini-aside-nav-toggle {
+    background-color: $right-nav-bg;
+    position: fixed;
+    top: 70%;
+    right: 0;
+    width: 19px;
+    height: 20%;
+    border-radius: 50% 0 0 50%;
+    z-index: 90;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -52px;
+        right: -66px;
+        transform: rotate(75deg);
+        border: 36px solid $right-nav-bg;
+        border-color: transparent transparent $right-nav-bg transparent;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        right: -64px;
+        border: 36px solid $right-nav-bg;
+        transform: rotate(-79deg);
+        border-color: $right-nav-bg transparent transparent transparent;
+    }
+    .inner-nav {
+        display: none;
+    }
+}
+.right-nav {
+    position: fixed;
+    bottom: 66px;
+    background-color: $right-nav-bg;
+    z-index: 99;
+    right: 19px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: -10px 20px 13px #00000057;
+    display: none;
+    .form-check-label {
+        cursor: pointer;
+    }
+    .form-check-input:checked {
+        background-color: #033a52;
+        border-color: #101f4a;
+    }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #002930;
+    color: aliceblue;
+    border-color: #000;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #013b46;
+    color: aliceblue;
+    border-color: #000;
+}
+.pt-\.6 {
+    padding-top: 0.6rem;
+}
+.pb-\.6 {
+    padding-bottom: 0.6rem;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.swal-button--catch {
+    background: #f56a19 !important;
+}
+.swal-button--cancel {
+    background-color: #31b958;
+    color: white;
+    transition: ese 1s;
+}
+.swal-button--cancel:not([disabled]):hover {
+    background-color: #0bcd04;
+}
+.swal-button--confirm {
+    background-color: #31b958;
+}
+.swal-button:not([disabled]):hover {
+    background-color: #15c146;
+}
+.ck-editor__editable {
+    min-height: 35vh;
+    max-height: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 140, 140);
+    border-radius: 10px;
+    transition: linear 0.5s;
+    &:hover {
+        background-color: rgb(167, 167, 167);
+    }
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.todo-widget .todo-list .todo-item {
+    padding: 20px 15px 15px 10px;
+}
+.text-justify {
+    text-align: justify;
+}
+.msg-alert {
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    color: aliceblue;
+    background-color: #cd6c6c;
+    border: 1px solid #8d3434;
+}
+.pass-eye {
+    position: absolute;
+    top: 37px;
+    right: 30px;
+    color: #f0f8ff8a;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 99;
+    &:hover{
+        color: aliceblue;
+    }
+}
+
+.left-alert {
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+    width: max-content !important;
+    border: 2px solid #f18509;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+

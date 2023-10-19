@@ -1,0 +1,209 @@
+@import "var.index";
+.avater {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #002056;
+}
+.nav-bg{
+    background-color: $nav-bg;
+}
+.h-100vh{
+    height: 100vh;
+}
+.h-80vh{
+    height: 80vh;
+}
+.h-50vh{
+    height: 50vh;
+}
+.main-container{
+    margin: 5.4% 0;
+}
+.auto-count{
+    counter-reset: auto-increment;
+}
+.count::before{
+    counter-increment: auto-increment;
+    content: counter(auto-increment) ". ";
+}
+.question-container {
+    border-bottom: 1px solid #e8eaef;
+    border-top: 1px solid #e8eaef;
+    padding: 1rem;
+}
+.text-justify{
+    text-align: justify;
+}
+
+
+// video poster
+.poster-area{
+    width: 100%;
+    height: auto;
+    .poster-thumnail{
+        position: relative;
+        display: block;
+        img{
+            width: 100%;
+            max-height: 12rem;
+            min-height: auto;
+            vertical-align: center;
+        }
+        .video-duration{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: max-content;
+            background-color: #0000006b;
+            color: aliceblue;
+            padding: .015rem .5rem;
+            text-align: center;
+            font-size: normal;
+            border-radius: 5px;
+        }
+    }
+    .video-course{
+        width: max-content;
+        background-color: #3cb878;
+        color: aliceblue;
+        padding: .015rem .3rem;
+        text-align: center;
+        font-weight: normal;
+        font-size: 15px;
+        font-family: monospace;
+        text-transform: capitalize;
+        box-shadow: 2px 2px 2px #00000052;
+    }
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.bg-gray{
+    background-color: #eaeced;
+}
+
+.-mt-3{
+    margin-top: -1.5rem;
+}
+.msg-alert {
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    color: aliceblue;
+    background-color: #cd6c6c;
+    border: 1px solid #8d3434;
+}
+.pass-eye {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #88898b8a;
+    transition: .5s;
+    cursor: pointer;
+    &:hover{
+        color: #5657588a;
+    }
+}
+button.watch-btn {
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    width: max-content;
+    border: 1px solid #a9a9a942;
+    background-color: #d1d6db45;
+    padding: .5rem 2rem;
+    color: #028f82;
+    transition: .5s;
+    &:hover{
+        color: #3cb878;
+    }
+}
+.section-title {
+    padding-bottom: .1rem;
+    h6{
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        color: #37517e;
+        padding-bottom: .5rem;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #47b2e4;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+    
+}
+.sub-tuto-inner-con {
+    min-height: inherit;
+    max-height: 84vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sub-tuto-outer-con {
+    background: #e6eded;
+    border: 1px solid #8080802e;
+}
+.section-title-bg{
+    background: #e6eded;
+}
+.z-1{
+    z-index: 1;
+}
+.z-99{
+    z-index: 99;
+}
+.ans-container {
+    width: max-content;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid #722323;
+    background-color: #8d3434;
+    color: aliceblue;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 2px 7px 6px #0000004f;
+}
+.about-p{
+    padding:2.25rem !important
+}
+/*
+-----------------------------------------
+ web responsive
+-----------------------------------------
+*/
+@media screen and (max-width: 767px)
+{
+    .main-container{
+        margin: 28% auto !important;
+    }
+    .d-none-sm{
+        display: none;
+    }
+    .d-block-sm{
+        display: block;
+    }
+}
+@media (min-width: 768px){
+    
+}

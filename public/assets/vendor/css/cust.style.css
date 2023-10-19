@@ -1,0 +1,489 @@
+/*
+    This style sheet for Tdesk website.
+    Authoor: Md. Masum billa
+*/
+/*
+    Different font size
+*/
+body {
+  background-color: #0a1d4c;
+  scroll-behavior: smooth;
+}
+
+.page-wrapper {
+  background: #0a1d4c;
+}
+
+.section-bg {
+  background-color: #022827;
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #007870;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+  background-color: #00422f;
+  border-radius: 0.3rem;
+  border: 1px solid #fff;
+}
+
+.text-aliceblue {
+  color: aliceblue;
+}
+
+.fs-1 {
+  font-size: 1rem !important;
+}
+
+.fs-2 {
+  font-size: 1.5rem !important;
+}
+
+.fs-3 {
+  font-size: 2rem !important;
+}
+
+.fs-4 {
+  font-size: 2.5rem !important;
+}
+
+.fs-5 {
+  font-size: 3rem !important;
+}
+
+.fs-6 {
+  font-size: 3.5rem !important;
+}
+
+.-ms-1 {
+  margin-left: -0.5rem;
+}
+
+.-ms-2 {
+  margin-left: -1rem;
+}
+
+.-ms-3 {
+  margin-left: -1.5rem;
+}
+
+.-ms-4 {
+  margin-left: -2rem;
+}
+
+.-ms-5 {
+  margin-left: -2.5rem;
+}
+
+.-ms-6 {
+  margin-left: -3rem;
+}
+
+.rounded-lt {
+  border-start-start-radius: 0.25rem;
+}
+
+.rounded-lb {
+  border-end-start-radius: 0.25rem;
+}
+
+.rounded-rt {
+  border-start-end-radius: 0.25rem;
+}
+
+.rounded-rb {
+  border-end-end-radius: 0.25rem;
+}
+
+.rounded-rb {
+  border-radius: 0 0 0 0.25rem;
+}
+
+.rounded-lt-0 {
+  border-start-start-radius: 0;
+}
+
+.rounded-lb-0 {
+  border-end-start-radius: 0;
+}
+
+.rounded-rt-0 {
+  border-start-end-radius: 0;
+}
+
+.rounded-rb-0 {
+  border-end-end-radius: 0;
+}
+
+.sidebar-link-expand {
+  background-color: #121416c2;
+  border-bottom: 2px solid #000;
+}
+
+.card {
+  background-color: #d2d6df;
+}
+
+.form-control {
+  background-color: #024241;
+  border-color: #037872;
+  color: #f0f8ff85 !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #f0f8ff85 !important;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #f0f8ff85 !important;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #f0f8ff85 !important;
+}
+
+.form-control::placeholder {
+  color: #f0f8ff85 !important;
+}
+
+.form-control:focus {
+  background-color: #045652;
+  border-color: #038f88;
+  color: aliceblue !important;
+}
+
+.form-control.focus-box-shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control.focus-box-shadow {
+  -webkit-box-shadow: 0px 5px 5px #000000d1;
+          box-shadow: 0px 5px 5px #000000d1;
+}
+
+hr {
+  background-color: black;
+}
+
+video {
+  border: 1px solid #00524e;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #000;
+          box-shadow: 0.2rem 0.2rem 0.5rem #000;
+  text-align: center;
+  background: transparent;
+}
+
+#poster-view {
+  height: 200px;
+}
+
+.fa-eraser {
+  cursor: pointer;
+  position: relative;
+}
+
+.fa-eraser .eraser-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: auto;
+  right: auto;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: aliceblue;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility ease 0.5s, opacity ease 0.5s;
+  transition: visibility ease 0.5s, opacity ease 0.5s;
+}
+
+.fa-eraser .eraser-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 37%;
+  right: auto;
+  border: 0.5rem solid #000;
+  border-color: #000 transparent transparent transparent;
+}
+
+.fa-eraser:hover .eraser-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-shadow {
+  text-shadow: 4px 3px 2px #000;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 5px 5px #000000d1;
+          box-shadow: 0px 5px 5px #000000d1;
+}
+
+.box-shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.left-sidebar {
+  position: fixed;
+  height: 100vh;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.z-10 {
+  z-index: 1;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.auto-counter {
+  counter-reset: auto-increment;
+}
+
+.counter::before {
+  counter-increment: auto-increment;
+  content: counter(auto-increment) ".";
+}
+
+.w-max-content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.table tr th {
+  background-color: #001316 !important;
+  border-color: black !important;
+}
+
+.form-check-input {
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.mini-aside-nav-toggle {
+  background-color: #037bbb;
+  position: fixed;
+  top: 70%;
+  right: 0;
+  width: 19px;
+  height: 20%;
+  border-radius: 50% 0 0 50%;
+  z-index: 90;
+}
+
+.mini-aside-nav-toggle::after {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  right: -66px;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+  border: 36px solid #037bbb;
+  border-color: transparent transparent #037bbb transparent;
+}
+
+.mini-aside-nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -64px;
+  border: 36px solid #037bbb;
+  -webkit-transform: rotate(-79deg);
+          transform: rotate(-79deg);
+  border-color: #037bbb transparent transparent transparent;
+}
+
+.mini-aside-nav-toggle .inner-nav {
+  display: none;
+}
+
+.right-nav {
+  position: fixed;
+  bottom: 66px;
+  background-color: #037bbb;
+  z-index: 99;
+  right: 19px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-box-shadow: -10px 20px 13px #00000057;
+          box-shadow: -10px 20px 13px #00000057;
+  display: none;
+}
+
+.right-nav .form-check-label {
+  cursor: pointer;
+}
+
+.right-nav .form-check-input:checked {
+  background-color: #033a52;
+  border-color: #101f4a;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #002930;
+  color: aliceblue;
+  border-color: #000;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #013b46;
+  color: aliceblue;
+  border-color: #000;
+}
+
+.pt-\.6 {
+  padding-top: 0.6rem;
+}
+
+.pb-\.6 {
+  padding-bottom: 0.6rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.swal-button--catch {
+  background: #f56a19 !important;
+}
+
+.swal-button--cancel {
+  background-color: #31b958;
+  color: white;
+  -webkit-transition: ese 1s;
+  transition: ese 1s;
+}
+
+.swal-button--cancel:not([disabled]):hover {
+  background-color: #0bcd04;
+}
+
+.swal-button--confirm {
+  background-color: #31b958;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #15c146;
+}
+
+.ck-editor__editable {
+  min-height: 35vh;
+  max-height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8d8c8c;
+  border-radius: 10px;
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a7a7a7;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.todo-widget .todo-list .todo-item {
+  padding: 20px 15px 15px 10px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.msg-alert {
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  color: aliceblue;
+  background-color: #cd6c6c;
+  border: 1px solid #8d3434;
+}
+
+.pass-eye {
+  position: absolute;
+  top: 37px;
+  right: 30px;
+  color: #f0f8ff8a;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.pass-eye:hover {
+  color: aliceblue;
+}
+
+.left-alert {
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  border: 2px solid #f18509;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=cust.style.css.map */
